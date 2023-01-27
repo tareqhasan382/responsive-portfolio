@@ -1,0 +1,22 @@
+.about{
+    width: 120px;
+    height: 60px;
+    background-color: black;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid rgb(151, 10, 10);
+    transition: calc(.5);
+}
+.about1{
+    width: 220px;
+    height: 60px;
+    background-color: black;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid rgb(151, 10, 10);
+    font-family: Ubuntu;
+}

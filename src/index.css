@@ -1,13 +1,43 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:wght@200;400;700&family=Open+Sans:wght@400;500;600&family=Oswald:wght@500&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,800;0,900;1,700&family=Work+Sans&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+
+    .about1{
+        @apply lgl:w-[220px] w-[180px] h-16 bg-black bg-opacity-25 text-gray-200 lgl:text-xl text-sm inline-flex items-center justify-center rounded-md shadow-shadowOne 
+        hover:bg-opacity-40 transition-all hover:text-designColor cursor-pointer duration-300;
+    }
+    .about{
+        @apply lgl:w-[120px] w-[90px] h-16 bg-black bg-opacity-25 text-gray-200 lgl:text-xl text-sm inline-flex items-center justify-center rounded-md shadow-shadowOne 
+        hover:bg-opacity-40 hover:text-designColor cursor-pointer duration-300;
+    }
+    .bannerIcon{
+        @apply w-14 h-14 bg-black bg-opacity-25 text-gray-200 text-xl inline-flex items-center justify-center rounded-md shadow-shadowOne 
+        hover:bg-opacity-40 hover:-translate-x-1 transition-all hover:text-designColor cursor-pointer duration-300;
+    }
+    .resumiLi{
+        @apply w-full h-20 bg-black bg-opacity-25 text-gray-300 text-xl flex justify-center cursor-pointer hover:bg-opacity-40 duration-300
+         items-center border-[1px] rounded-none;
+    }
+    .bgOpacity{
+        @apply bg-black bg-opacity-40
+    }
+    .contactInput{
+        @apply w-full h-12 rounded-lg border-b-[1px] border-b-gray-600 bg-[#191b1e] text-lightText px-4 active:outline-none 
+        focus-visible:outline-designColor outline-none focus-visible:border-b-transparent duration-300
+    }
+    .contactTextArea{
+        @apply w-full rounded-lg border-b-[1px] border-b-gray-600 bg-[#191b1e] text-lightText px-4 active:outline-none 
+        focus-visible:outline-designColor outline-none focus-visible:border-b-transparent duration-300 resize-none
+    }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.active{
+    color: white;
+}
+.scrollbar-hide::-webkit-scrollbar{
+    display: none;
 }
